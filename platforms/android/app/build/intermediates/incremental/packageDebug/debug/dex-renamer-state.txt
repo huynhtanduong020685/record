@@ -1,0 +1,4 @@
+#Wed May 29 14:53:06 ICT 2019
+base.0=/Users/pipo/Desktop/irontrainproject02/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

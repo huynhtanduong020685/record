@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Speech Recorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+    
+    <ion-card class="whatcolor">
+        <ion-card-header class="ioncardheader">Instruction</ion-card-header>
+        <ion-card-content>
+          1. Click Record to start, saying only the words that appear in the box below. <br>
+          2. When done speaking, wait a moment, then click Stop. <br>
+          3. Review any recordings with warnings. <br>
+          4. When all prompts are completed, click Upload to either upload to VoxForge server or save to browser storage for later uploading.
+
+        </ion-card-content>
+
+    </ion-card>
+    <ion-card class="whatcolor">
+    <ion-list>
+      <ion-item *ngFor="let file of mediaFiles" tappable (click)="searchWebSpeech()" text-wrap>
+        {{ file.name }}
+        <p>{{ file.size / 1000 / 1000 | number }} MB</p>
+      </ion-item>
+    </ion-list>
+    </ion-card>
+
+    <div class="buttonspeech">
+        <ion-button color="danger"  full (click)="audiorecording()"> Start Record</ion-button>
+        <ion-button [color]="isRecording ? 'danger' : 'secondary'"(click)="stopRecording()" (click)="onButtonClick()">
+        <ion-label>Stop Record</ion-label>
+        </ion-button>
+      <ion-card id="welcome-card">
+          <ion-button color="danger"  full  *ngIf="buttonClicked" (click)="playrecording()">Play Record</ion-button>
+        <ion-card-content>
+          <ion-item *ngFor="let file of matches" tappable text-wrap>
+            <!-- {{ file.name }} -->
+            <!-- <p>{{ file.size / 1000 / 1000 | number }} MB</p> -->
+          </ion-item>
+        </ion-card-content>
+        <a class="cd-popup-close img-replace"></a>
+      </ion-card>
+      </div>
+      
+</ion-content>

@@ -1,0 +1,54 @@
+ion-card{
+    color:#ffffff;
+  }
+  .buttonspeech{
+  
+      margin: auto;
+      border-radius: 10px;
+      margin-top:50px;
+      //width:135px;
+      border: none;
+      color: aliceblue;
+      background-color: #ffffff !important;
+      text-align: center;
+  }
+  ion-card.welcome-card{
+     border-radius: 15px;
+     margin-top: 30px;
+     background:#3880ff !important;
+     height:200px;
+  }
+  ion-card-content.ioncardcontent{
+    margin:auro;
+    padding:auto;
+    height:auto;
+  }
+  ion-button.headphone{
+      margin: auto; 
+      width:300px;
+      height:50px;
+      border-radius: 10px;
+      background-color: #3880ff !important;
+  }
+  ion-card-header{
+  
+    color:#ffffff;
+  }
+  ion-card.whatcolor{
+    color:black;
+  }
+  ion-card-header.ioncardheader{
+    text-align: center;
+    font-weight: bold;
+    color:black;
+  }
+  .welcome-card .cd-popup-close::before, .welcome-card .cd-popup-close::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    width: 14px;
+    height: 3px;
+    background-color: #8f9cb5;
+  }
+  
+  

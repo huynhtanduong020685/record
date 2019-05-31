@@ -1,0 +1,7 @@
+{
+  "name": "ionic-fundamentals",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
